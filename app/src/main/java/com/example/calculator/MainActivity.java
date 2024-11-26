@@ -1,5 +1,6 @@
 package com.example.calculator;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -80,4 +81,9 @@ private EditText number1, number2;
         result.setText(res+"");
     }
 
+    public void calculator(View view) {
+        Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+        startActivity(intent);
+        finish();
+    }
 }
