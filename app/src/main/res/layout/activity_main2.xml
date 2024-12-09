@@ -11,6 +11,68 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Некоторые настройки калькулятора:
-         Формат отображения данных на дисплее. Можно задать естественное отображение чисел (MthIO-MathO, MthIO-LineO) для вывода функций, иррациональных чисел и прочих выражений в том виде, в котором они записываются на бумаге, или линейное отображение чисел (LineIO) для вывода простых дробей и прочих выражений в одной строке. 1 Единица измерения углов по умолчанию. 1 Можно установить градусы, радианы или грады в качестве единицы измерения углов для ввода и вывода результатов вычислений. 23 Формат отображения чисел. Позволяет указать количество цифр, которое отображается при выводе результатов вычислений. 1 Например, Fix задаёт количество десятичных знаков (от 0 до 9) в отображаемых результатах вычисления, а Sci — количество значащих цифр (от 1 до 10). 2" />
+        android:layout_weight="1"
+        android:text="Корень"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/number1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:inputType="numberSigned"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:id="@+id/equal"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="="
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Высчитать"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.071" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

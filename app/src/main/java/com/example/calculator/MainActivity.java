@@ -81,7 +81,7 @@ private EditText number1, number2;
         result.setText(res+"");
     }
 
-    public void calculator(View view) {
+    public void button(View view) {
         Intent intent = new Intent(MainActivity.this, MainActivity2.class);
         startActivity(intent);
         finish();
